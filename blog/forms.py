@@ -25,12 +25,6 @@ class TagForm(forms.ModelForm):
             raise ValidationError('slug must be unique. We have "{}" slug already'.format(new_slug))
         return new_slug
 
-  #  def save(self):
-   #     new_tag = Tag.objects.create(
-    #        title=self.cleaned_data['title'],
-     #       slug=self.cleaned_data['slug']
-      #  )
-       # return new_tag
 
 
 class PostForm(forms.ModelForm):
